@@ -1,0 +1,371 @@
+@font-face {
+    font-family: hellogoodbye;
+    src: url("../fonts/hellogoodbye.otf") format("opentype");
+}
+html, body{
+    /*height: 100%;*/
+}
+body{
+    background: url("driehoek2.png") repeat;
+    margin: 0;
+    background-position-x: 10px;
+    width: 100%;
+   /* height: 900px;*/
+}
+#container{
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    min-height: 100%;
+}
+#headerImage{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.head{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+.socialMedia{
+    position: absolute;
+    height: 40px;
+    bottom: 7px;
+    right: 5px;
+    margin-right: 30px;
+}
+.socialMedia >img{
+    margin-left: 2px;
+}
+.leftMargin{
+    margin-left: 35px;
+}
+.rightMargin{
+    margin-right: 35px;
+}
+#bottomHR,
+#headHR{
+   background-color: #E4BA08;
+    height: 2px;
+    top:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+#bottomHR{
+    margin-bottom: 0px;
+    height: 4px;
+}
+#dynamicContent{
+
+}
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    display: table;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+}
+
+.navbar > li {
+    float:left;
+   /* min-width: 16%;*/
+    width: auto;
+   /** text-align: center;**/
+    font-family: 'Amatic SC';
+    color: #A4A283;
+    font-size: 40px;
+    padding-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+.navbar > li > a {
+    display: block;
+
+}
+.bull{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 48px;
+    color: #E4BA08;
+}
+.rotate{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.specialBorder{
+    background-repeat: repeat-x;
+    height: 10px;
+    background-size: 700px 10px;
+    background-image: url(../images/border.png);
+}
+.backgroundFill{
+    height: 10px;
+    background-color: chartreuse;
+}
+footer {
+  /*width: 100%;
+    bottom: 0;
+   position: absolute;*/
+   position: absolute;
+    /*position: relative;*/
+    bottom: 10px;
+    width: 100%;
+}
+.longText{
+    position: relative;
+    width: 100%;
+}
+.filler{
+    background-color: #E4BA08;
+    height: 75px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 75px;
+    color: white;
+    font-family: "Roboto", serif;
+}
+
+/*Submenu*/
+.subMenu{
+    display: none;
+    padding-left: 0px;
+    position:absolute;
+    z-index:9;
+   /* margin-top: 12px;*/
+    list-style-type: none;
+    max-width: 200px;
+
+}
+#content{
+    overflow: auto;
+}
+.subMenu li{
+    background-color: #E4BA08;
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    list-style-type: none;
+    margin-left: 0px;
+    margin-right: 10px;
+    min-width: 200px;
+    /*padding-bottom: 7px;*/
+}
+/*/.subMenu li:not(:last-child) a{*/
+.subMenu li:not(:nth-last-of-type(2)) a{
+border-bottom:1px dashed;
+}
+.interacting a{
+    font-family: 'Amatic SC', serif;
+    font-size: 35px;
+    text-align: center;
+}
+.subMenu li:last-child{
+    position: relative;
+    background-color: transparent;
+}
+.subMenu li:last-child img{
+    position: absolute;
+
+}
+.subMenu li:not(:first-child) a{
+
+}
+.subMenu li a{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    margin-left: 7px;
+    margin-right: 7px;
+    display:block;
+}
+#contactSubmit{
+    background-color: #E4BA08;
+    color: white;
+    border-radius: 0;
+    height: 30px;
+    width: 100px;
+    border: 0px;
+    font-family: 'Roboto';
+}
+.infoText{
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    color: #848067;
+    font-weight: 400;
+    text-align: justify;
+}
+.subMenu li a:hover{
+    color: #848067;
+    border-bottom-color: white;
+}
+.hellogoodbye-left{
+   font-family: hellogoodbye,serif;
+    margin-right: 15px;
+    padding-left: auto;
+}
+.hellogoodbye-right{
+   font-family: hellogoodbye,serif;
+    margin-left: 15px;
+    padding-right: auto;
+}
+.subNavWithBullets{
+    font-size: 15px;
+    font-family: Roboto, serif;
+    font-weight: 400;
+    color: #E4BA08;
+}
+.subNavWithBullets li a{
+    color: #848067;
+}
+#subNav{
+     list-style-type: none;
+     padding: 0;
+     font-size: 15px;
+     font-family: Roboto, serif;
+     font-weight: 400;
+     color: #848067;
+ }
+#subNav li{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#subNav li:not(:last-child){
+
+    border-bottom: 1px dashed #848067;
+}
+#bannerImage{
+    background-size: cover;
+    background: url("../images/overKaren/hoehetbegonheader.PNG");
+    background-size: cover;
+    height: 261px;
+}
+#achterdeschermenBanner{
+    background-size: cover;
+    background: url("../images/overKaren/achterdeschermenHeader.PNG");
+    background-size:   cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 551px;
+}
+.namenDieren{
+    font-family: hellogoodbye,serif;
+}
+.dierenCollectieDiv{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Amatic SC'
+}
+.showDisplay{
+    box-shadow: 6px 6px 10px #888888;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 150px;
+}
+.showDisplay:hover{
+    opacity: 0.7;
+}
+.geboortekaartje:hover{
+    opacity: 0.7;
+}
+.dierenKaart{
+    margin-left: 25px;
+}
+.subTitle{
+    color: #E4BA08;
+    font-family: 'Amatic SC', serif;
+    font-size: 36px;
+}
+.bold{
+    font-weight: bold;
+}
+.eindwerkImages{
+    width: 800px;
+    border: 1px solid #848067;
+}
+.arrows{
+    font-family: hellogoodbye,serif;
+}
+.noLinkMarkup{
+    color: inherit;
+    text-decoration: none;
+}
+#slides{
+    position: absolute;
+}
+.slidesjs-pagination{
+    position: relative;
+}
+.slidesjs-pagination-item {
+    float: left;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 13px;
+    text-align: left;
+    text-decoration: none;
+    width: 18px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(253, 253, 254, 1);
+    margin-right: 7px;
+
+}
+.slidesjs-pagination-item.active {
+    /*background-color: #D0E8E6;*/
+    background-color: black;
+}
+#sliderContainer{
+    margin: 50px 25px 50px 25px;
+}
+.sy-pager{
+    position: relative;
+    top: -50px;
+    z-index: 3;
+    text-align: right;
+}
+.sy-pager li{
+    overflow: hidden;
+}
+.sy-pager li a {
+    text-indent: 100%;
+}
+
+/*.slidesjs-pagination-item{
+    background-image: url(http://www.slidesjs.com/img/pagination.png);
+    background-position: 0px -13px;
+    color: rgb(51, 51, 51);
+    cursor: auto;
+    display: block;
+    float: left;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 0px;
+    line-height: 24px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 13px;
+    text-align: left;
+    text-decoration: none;
+    width: 13px;
+}*/
+/*
+border-style: solid;
+border-width: 0px 0px 50px;
+-moz-border-image: url(submenu-border.jpg) 0 0 50 repeat round;
+-webkit-border-image: url(submenu-border.jpg) 0 0 50 repeat round;
+-o-border-image: url(submenu-border.jpg) 0 0 50 repeat round;
+border-image: url(submenu-border.jpg) 0 0 50 fill repeat round;*/
