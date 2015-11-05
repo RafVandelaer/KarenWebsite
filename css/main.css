@@ -276,6 +276,9 @@ border-bottom:1px dashed;
 .geboortekaartje:hover{
     opacity: 0.7;
 }
+.opMaatGemaakt{
+    width: 100%;
+}
 .dierenKaart{
     margin-left: 25px;
 }
@@ -290,6 +293,15 @@ border-bottom:1px dashed;
 .eindwerkImages{
     width: 800px;
     border: 1px solid #848067;
+}
+#sendbutton{
+    height: 50px;
+    background-color: #E4BA08;
+    color: white;
+    border: none;
+    font-family: "Amatic SC";
+    font-size: 28px;
+    margin-top: 10px;
 }
 .arrows{
     font-family: hellogoodbye,serif;
