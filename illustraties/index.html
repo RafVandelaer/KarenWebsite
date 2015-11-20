@@ -198,8 +198,8 @@
                      margin-right: 15px;">&gt;</span>boek-idee<span
                             style="font-family: hellogoodbye,serif; margin-left: 15px;">&lt;</span></h2>
 
-                    <a><img class="showDisplay" src="../images/illustraties/boek-idee/feppe%20kopie.jpg"></a>
-                    <a><img class="showDisplay" src="../images/illustraties/boek-idee/walvis%202%20kopie.jpg"></a>
+                    <a><img class="showDisplay" link="ooievaar" src="../images/illustraties/boek-idee/walvis%202%20kopie.jpg"></a>
+                    <a><img class="showDisplay" link="feppe" src="../images/illustraties/boek-idee/feppe%20kopie.jpg" ></a>
                 </section>
 
             </div>
@@ -232,7 +232,10 @@
 </body>
 <script type="text/javascript" src="../jquery/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="../jquery/GUI.js"></script>
+<script type="text/javascript" src="../script/urlFinder.js"></script>
 <script>
+
+
     $("a").click(function () {
         if($(this).attr("link")){
             $("#dynamicContent").slideUp();
