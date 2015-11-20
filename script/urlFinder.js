@@ -36,10 +36,25 @@ if(section != "") {
     });
     id = "#" + section;
 
+
     //als section leeg is.
     if(($(id).children().length > 0) == false ) {
         id = $(id).next("section");
     }
+
+
+
+    $("#retroCollectieUsed").show();
+    //multiple sections in section
+    if($(id).children(':visible').length == 0) {
+       // alert("section: " + id);
+        $(id).find("section").first().slideDown("slow", function () {
+            content.height("initial");
+        });
+    }
+
+
+
     $(id).addClass("active");
    // alert("find is done.");
     $(id).show(function () {
@@ -61,10 +76,10 @@ if(section != "") {
 
         });
     });
-    //TODO: Vet maken van juiste subnav
+
     var subnav = $(id).attr("id");
     $('ul').find("li").each(function () {
-        console.log(subnav);
+       // console.log(subnav);
       //  console.log("li found: "+ $(this).find("a").attr("link"));
        if($(this).find("a").attr("link") == subnav){
            $(this).addClass("bold");
