@@ -6,7 +6,7 @@ html, body{
     /*height: 100%;*/
 }
 body{
-    background: url("driehoek2.png") repeat;
+    background: url("driehoek2%20(Kopie).png") repeat;
     margin: 0;
     background-position-x: 10px;
     width: 100%;
@@ -145,6 +145,8 @@ footer {
     max-width: 200px;
 
 }
+
+/* overfow was auto*/
 #content{
     overflow: auto;
 }

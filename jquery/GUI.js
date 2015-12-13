@@ -22,20 +22,61 @@ $(document).ready(function(){
     footerPostion();
 });
 
-function footerPostion(){
+$( window ).resize(function() {
+   footerPostion();
+});
+
+function footer2(){
     var container = $("#text");
+    var content = $("#content");
     var docHeight = $(window).height();
     //alert("container: " + container.prop('scrollHeight') + " document: " + docHeight);
-    if(container.prop('scrollHeight') < (docHeight-(256+95))){
+    if (container.prop('scrollHeight') < (docHeight - (256 + 95))) {
 
         var headerHeight = 445;
-        var rightheight = docHeight-headerHeight;
-       //alert("smaller");
-       $("#content").height(rightheight);
-    } else{
-       //alert("bigger");
+        var rightheight = docHeight - headerHeight;
+        //alert("smaller");
+        $("#content").height(rightheight);
+    } else {
+        //alert("bigger");
 
-        $("#content").css("height","");
+        $("#content").css("height", "");
+    }
+
+    if(content.hasScrollBar()){
+            $("#content").css("overflow", "");
+        //alert(originalheight-newheight);
+    }
+    else{
+        $("#content").css("overflow", "auto");
+    }
+}
+
+(function($) {
+    $.fn.hasScrollBar = function() {
+        return this.get(0).scrollHeight > this.height();
+    }
+})(jQuery);
+
+//TODO: doc height aanpassen bij klein scherm
+function footerPostion(){
+    //TODO aanpassen, footer 2checkt visibilty
+    footer2();
+    if(false) {
+        var container = $("#text");
+        var docHeight = $(window).height();
+        //alert("container: " + container.prop('scrollHeight') + " document: " + docHeight);
+        if (container.prop('scrollHeight') < (docHeight - (256 + 95))) {
+
+            var headerHeight = 445;
+            var rightheight = docHeight - headerHeight;
+            //alert("smaller");
+            $("#content").height(rightheight);
+        } else {
+            //alert("bigger");
+
+            $("#content").css("height", "");
+        }
     }
    /* var footer = $('footer');
     var height = footer.height();
