@@ -111,4 +111,33 @@ $(document).ready(function () {
     height = height - 10;
     wrapper.height(height);
     $("body").height(height);
+    $.get("../questionpop/question.html", function(data){
+        $("body").append(data);
+    });
+
+});
+
+$(document).on("click", "#clickableForm" , function(event) {
+    event.preventDefault();
+  ///  $(this).find("#vragenvakje").animate({height: '250px'});
+    var vragenvakje = $("#vragenvakje");
+    if( vragenvakje.is(".open")){
+        vragenvakje.animate({height: '50px'});
+        vragenvakje.removeClass("open");
+    }
+    else{
+        vragenvakje.animate({height: '250px'});
+        vragenvakje.addClass("open");
+    }
+   /* $("#vragenvakje").toggle(function () {
+        $(this).animate({height: '250px'});
+    }, function () {
+        $(this).animate({height: '50px'});
+    })*/
+
+});
+
+$('#theForm').find('input').click(function (event) {
+    event.preventDefault();
+    // your code
 });

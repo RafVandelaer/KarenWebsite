@@ -985,13 +985,15 @@
 
     //kaartje click
     $(".geboortekaartje").click(function () {
+       // alert("YES");
         var chosen = $(this).attr("src").filename();
         var link = chosen.replace("%20schuin-1",'');
 
         var oldOpened = $("#retroCollectieUsed");
         oldOpened.attr("id", "");
+        var main = $(".active").find("section").first();
         if ( $( "#"+link ).length != 0) {
-            oldOpened.slideUp("fast", function () {
+            main.slideUp("fast", function () {
                 $("#" + link).slideDown("slow", function () {
                     footerPostion();
                     //$("#container").css("min-height","0%");
