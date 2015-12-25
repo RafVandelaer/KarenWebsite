@@ -2,6 +2,17 @@
     font-family: hellogoodbye;
     src: url("../fonts/hellogoodbye.otf") format("opentype");
 }
+@font-face {
+    font-family: "AmaticWeb";
+    src: url("../fonts/AmaticSC-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "AmaticWeb";
+    src: url("../fonts/AmaticSC-Bold.ttf");
+    font-weight: 700;
+}
+
 html, body{
     /*height: 100%;*/
 }
@@ -31,7 +42,7 @@ div#vragenvakje{
 }
 .submitter{
     background-color: #caa108;
-    font-family: 'Amatic SC', serif;
+    font-family: 'AmaticWeb', serif;
     font-size: 28px;
     color: white;
     border: 0px;
@@ -109,7 +120,7 @@ div#vragenvakje{
    /* min-width: 16%;*/
     width: auto;
    /** text-align: center;**/
-    font-family: 'Amatic SC';
+    font-family: 'AmaticWeb';
     color: #A4A283;
     font-size: 40px;
     padding-bottom: 10px;
@@ -199,7 +210,7 @@ footer {
 border-bottom:1px dashed;
 }
 .interacting a{
-    font-family: 'Amatic SC', serif;
+    font-family: 'AmaticWeb', serif;
     font-size: 35px;
     text-align: center;
 }
@@ -298,7 +309,7 @@ border-bottom:1px dashed;
 .collectionShowcase{
     text-align: center;
     font-size: 35px;
-    font-family: 'Amatic SC'
+    font-family: 'AmaticWeb'
 }
 .showDisplay{
     box-shadow: 6px 6px 10px #888888;
@@ -320,7 +331,7 @@ border-bottom:1px dashed;
 }
 .subTitle{
     color: #E4BA08;
-    font-family: 'Amatic SC', serif;
+    font-family: 'AmaticWeb', serif;
     font-size: 36px;
 }
 .bold{
@@ -344,7 +355,7 @@ border-bottom:1px dashed;
     background-color: #E4BA08;
     color: white;
     border: none;
-    font-family: "Amatic SC";
+    font-family: "AmaticWeb";
     font-size: 28px;
     margin-top: 10px;
 }
@@ -385,7 +396,7 @@ border-bottom:1px dashed;
 .namenDisplay{
 color: #E4BA08;
     font-size: 35px;
-    font-family: 'Amatic SC';
+    font-family: 'AmaticWeb';
 }
 .sy-pager{
     position: relative;
